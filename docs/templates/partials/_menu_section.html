@@ -6,10 +6,8 @@
     </div>
     <div class="row">
         {% for drink in drinks_content %}
-        <div class="col-4 border" style="min-width: 20rem">
-            <ul>
-                {% include 'partials/_drink_card_content.html' %}
-            </ul>
+        <div class="col border" style="min-width: 12rem">
+            {% include 'partials/_drink_card_content.html' %}
         </div>
         {% endfor %}
     </div>

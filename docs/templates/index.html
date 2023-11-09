@@ -17,6 +17,10 @@
     {% include 'partials/_menu_section.html' %}
     {% endwith %}
 
+    {% with section_name="Zack's Picks", drinks_content=zack_picks %}
+    {% include 'partials/_menu_section.html' %}
+    {% endwith %}
+
     {% with section_name='Shots', drinks_content=shots %}
     {% include 'partials/_menu_section.html' %}
     {% endwith %}

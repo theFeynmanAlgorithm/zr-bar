@@ -17,6 +17,7 @@ if __name__ == '__main__':
     drink_context = {
         'classics': load_folder(Path(_DATA_FOLDER)/'classics'),
         'guest_favorites': load_folder(Path(_DATA_FOLDER)/'guest_favorites'),
+        'zack_picks': load_folder(Path(_DATA_FOLDER)/'zack_picks'),
         'shots': load_folder(Path(_DATA_FOLDER)/'shots'),
     }
     site = Site.make_site(contexts=[('index.html', drink_context)])
