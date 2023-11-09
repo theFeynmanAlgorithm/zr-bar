@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col border text-center" style="background-color: #000000">
+            <h1 style="color: #f5f3da">{{ section_name }}</h1>
+        </div>
+    </div>
+    <div class="row">
+        {% for drink in drinks_content %}
+        <div class="col-4 border" style="min-width: 20rem">
+            <ul>
+                {% include 'partials/_drink_card_content.html' %}
+            </ul>
+        </div>
+        {% endfor %}
+    </div>
+</div>

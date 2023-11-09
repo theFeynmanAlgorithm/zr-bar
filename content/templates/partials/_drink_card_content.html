@@ -1,0 +1,7 @@
+<h3>{{ drink.name }}</h3>
+<ul>
+{% for ingredient in drink.ingredients %}
+    <li>{{ ingredient }}</li>
+{% endfor %}
+</ul>
+Directions: <em>{{ drink.directions }}</em>
