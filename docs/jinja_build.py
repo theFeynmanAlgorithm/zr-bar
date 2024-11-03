@@ -19,6 +19,7 @@ if __name__ == '__main__':
         'guest_favorites': load_folder(Path(_DATA_FOLDER)/'guest_favorites'),
         'zack_picks': load_folder(Path(_DATA_FOLDER)/'zack_picks'),
         'shots': load_folder(Path(_DATA_FOLDER)/'shots'),
+        'fall_rotation': load_folder(Path(_DATA_FOLDER)/'fall_rotation'),
     }
     site = Site.make_site(contexts=[('index.html', drink_context)])
     site.render(use_reloader=True)

@@ -9,6 +9,11 @@
     <link rel="icon" href="favicon.png">
 </head>
 <body style="background-color: #f5f3da">
+
+    {% with section_name='Fall Rotation', drinks_content=fall_rotation %}
+    {% include 'partials/_menu_section.html' %}
+    {% endwith %}
+
     {% with section_name='Guest Favorites', drinks_content=guest_favorites %}
     {% include 'partials/_menu_section.html' %}
     {% endwith %}
